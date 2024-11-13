@@ -1,0 +1,14 @@
+CREATE TABLE controle_saude (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    animal_id INT NOT NULL,
+    data_visita DATE NOT NULL,
+    tipo_visita VARCHAR(50) NOT NULL,
+    descricao TEXT,
+    peso DECIMAL(5, 2),
+    temperatura DECIMAL(4, 1),
+    diagnostico TEXT,
+    tratamento TEXT,
+    proxima_visita DATE,
+    observacoes TEXT,
+    FOREIGN KEY (animal_id) REFERENCES cadastro_animais(id) ON DELETE CASCADE
+);

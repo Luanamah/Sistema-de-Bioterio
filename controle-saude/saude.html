@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Saúde do Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Saúde do Animal</h1>
+        
+        <!-- Formulário de Exames -->
+        <section>
+            <h2>Exames do Animal</h2>
+            <form action="controle_saude.php" method="post">
+                <label for="tipo-exame">Tipo de Exame:</label>
+                <input type="text" id="tipo-exame" name="tipo_exame" required>
+                
+                <label for="data-exame">Data do Exame:</label>
+                <input type="date" id="data-exame" name="data_exame" required>
+                
+                <label for="resultado-exame">Resultado:</label>
+                <textarea id="resultado-exame" name="resultado_exame" rows="3" required></textarea>
+                
+                <button type="submit" name="submit_exame">Salvar Exame</button>
+            </form>
+        </section>
+
+        <!-- Formulário de Vacinas -->
+        <section>
+            <h2>Vacinas</h2>
+            <form action="controle_saude.php" method="post">
+                <label for="nome-vacina">Nome da Vacina:</label>
+                <input type="text" id="nome-vacina" name="nome_vacina" required>
+                
+                <label for="data-vacina">Data de Aplicação:</label>
+                <input type="date" id="data-vacina" name="data_vacina" required>
+                
+                <label for="proxima-vacina">Data da Próxima Dose:</label>
+                <input type="date" id="proxima-vacina" name="proxima_vacina">
+                
+                <button type="submit" name="submit_vacina">Salvar Vacina</button>
+            </form>
+        </section>
+
+        <!-- Formulário de Tratamentos -->
+        <section>
+            <h2>Tratamentos</h2>
+            <form action="controle_saude.php" method="post">
+                <label for="tipo-tratamento">Tipo de Tratamento:</label>
+                <input type="text" id="tipo-tratamento" name="tipo_tratamento" required>
+                
+                <label for="data-inicio-tratamento">Data de Início:</label>
+                <input type="date" id="data-inicio-tratamento" name="data_inicio_tratamento" required>
+                
+                <label for="data-fim-tratamento">Data de Fim:</label>
+                <input type="date" id="data-fim-tratamento" name="data_fim_tratamento">
+                
+                <label for="observacoes-tratamento">Observações:</label>
+                <textarea id="observacoes-tratamento" name="observacoes_tratamento" rows="3"></textarea>
+                
+                <button type="submit" name="submit_tratamento">Salvar Tratamento</button>
+            </form>
+        </section>
+
+        <!-- Formulário de Histórico de Doenças -->
+        <section>
+            <h2>Histórico de Doenças</h2>
+            <form action="controle_saude.php" method="post">
+                <label for="nome-doenca">Nome da Doença:</label>
+                <input type="text" id="nome-doenca" name="nome_doenca" required>
+                
+                <label for="data-diagnostico">Data do Diagnóstico:</label>
+                <input type="date" id="data-diagnostico" name="data_diagnostico" required>
+                
+                <label for="tratamento-realizado">Tratamento Realizado:</label>
+                <textarea id="tratamento-realizado" name="tratamento_realizado" rows="3"></textarea>
+                
+                <button type="submit" name="submit_doenca">Salvar Doença</button>
+            </form>
+        </section>
+
+        <!-- Formulário de Acompanhamento de Saúde -->
+        <section>
+            <h2>Acompanhamento de Saúde</h2>
+            <form action="controle_saude.php" method="post">
+                <label for="data-acompanhamento">Data do Acompanhamento:</label>
+                <input type="date" id="data-acompanhamento" name="data_acompanhamento" required>
+                
+                <label for="observacoes-acompanhamento">Observações:</label>
+                <textarea id="observacoes-acompanhamento" name="observacoes_acompanhamento" rows="3"></textarea>
+                
+                <button type="submit" name="submit_acompanhamento">Salvar Acompanhamento</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

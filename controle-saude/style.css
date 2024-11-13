@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 2%, 64%); /* Cor de fundo mais suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px; /* Ajustei a largura máxima para ser um pouco maior */
+    background-color: #34cdf0; /* Cor de fundo branca */
+    padding: 30px;
+    border-radius: 12px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Cor escura para o título principal */
+}
+
+.form-section {
+    margin-bottom: 30px; /* Aumentei o espaço entre as seções */
+    background-color: #f9f9f9; /* Cor de fundo suave para cada seção */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Leve sombra para destacar cada seção */
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555; /* Cor de título para as seções */
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #444; /* Cor para os labels */
+}
+
+input[type="text"], input[type="date"], textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50; /* Cor verde mais suave */
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de hover mais escura */
+}
+
+/* Estilo para os botões de reset */
+button[type="reset"] {
+    background-color: #ff6b6b;
+}
+
+button[type="reset"]:hover {
+    background-color: #e55a5a;
+}
+
+/* Ajuste para o formulário de botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alocação de Animais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Alocação de Animais</h1>
+
+  <!-- Filtros de Pesquisa -->
+  <section id="filters">
+    <input type="text" id="search" placeholder="Buscar por nome, tipo, ou ID..">
+    <select id="statusFilter">
+      <option value="all">Todos</option>
+      <option value="available">Disponíveis</option>
+      <option value="allocated">Alocados</option>
+    </select>
+    <button onclick="filterAnimals()">Filtrar</button>
+  </section>
+
+  <!-- Lista de Animais -->
+  <section id="animalList">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>ID</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="animalTable">
+        <!-- Linhas preenchidas dinamicamente -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Formulário de Alocação -->
+  <section id="allocationForm">
+    <h2>Alocar Animal</h2>
+    <select id="allocateAnimalSelect">
+      <!-- Opções preenchidas dinamicamente -->
+    </select>
+    <input type="text" id="responsibleName" placeholder="Nome do responsável">
+    <input type="text" id="responsibleLocation" placeholder="Localização">
+    <button onclick="allocateAnimal()">Confirmar Alocação</button>
+  </section>
+
+  <!-- Formulário de Desalocação -->
+  <section id="deallocationForm">
+    <h2>Desalocar Animal</h2>
+    <select id="deallocateAnimalSelect">
+      <!-- Opções preenchidas dinamicamente -->
+    </select>
+    <button onclick="deallocateAnimal()">Confirmar Desalocação</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
